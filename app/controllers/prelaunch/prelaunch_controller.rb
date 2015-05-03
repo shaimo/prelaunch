@@ -1,5 +1,5 @@
 module Prelaunch
-  class PrelaunchController < ActionController::Base
+  class PrelaunchController < ApplicationController
     def index
       if Prelaunch.redirect_url
         redirect_to Prelaunch.redirect_url
