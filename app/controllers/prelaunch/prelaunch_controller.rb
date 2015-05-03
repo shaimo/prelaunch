@@ -1,6 +1,7 @@
 module Prelaunch
   class PrelaunchController < ApplicationController
     def index
+      logger.debug "In index. path=#{categories_path}"
       if Prelaunch.redirect_url
         redirect_to Prelaunch.redirect_url
       else
